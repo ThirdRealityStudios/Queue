@@ -25,7 +25,7 @@ public class Queue
 
     public Object dequeue()
     {
-        Object dequeued = first;
+        Object dequeued = first; // other way: use front()
 
         if(!empty())
         {
