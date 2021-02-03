@@ -18,10 +18,14 @@ public class Main
         queue.enqueue("TEST1");
         System.out.println(queue.front());
 
-        System.out.println(((Node) queue.dequeue()).getContent());
+        System.out.println(queue.dequeue());
 
         queue.enqueue("TEST2");
-        System.out.println(((Node) queue.dequeue()).getContent());
-        System.out.println(((Node) queue.dequeue()).getContent());
+        System.out.println(queue.front());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        
+        // System.out.println(queue.dequeue()); 
+        	// is a test, will throw a java.lang.NullPointerException
     }
 }

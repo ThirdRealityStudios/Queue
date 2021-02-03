@@ -25,14 +25,14 @@ public class Queue
 
     public Object dequeue()
     {
-        Object dequeued = first; // other way: use front()
+        Node dequeued = first; // other way: use front()
 
         if(!empty())
         {
             first = first.getNext();
         }
 
-        return dequeued;
+        return dequeued.getContent();
     }
 
     /**
