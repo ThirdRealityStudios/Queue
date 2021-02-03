@@ -14,7 +14,6 @@ public class Queue
         if(empty())
         {
             first = newElement;
-            last = first;
         }
         else
         {
