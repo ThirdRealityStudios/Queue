@@ -1,7 +1,7 @@
 public class Node
 {
-    Node next;
-    Object content;
+    private Node next;
+    private Object content;
 
     public Node(Object content)
     {

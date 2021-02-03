@@ -14,7 +14,6 @@ public class Queue
         if(empty())
         {
             first = newElement;
-            first.setNext(last);
         }
         else
         {
@@ -26,19 +25,22 @@ public class Queue
 
     public Object dequeue()
     {
-        Object dequeued = first;
+        Node dequeued = first; // other way: use front()
 
         if(!empty())
         {
             first = first.getNext();
         }
 
-        return dequeued;
+        return dequeued.getContent();
     }
 
+    /**
+     * @return the first object in the Queue
+     */
     public Object front()
     {
-        return null;
+        return first.getContent();
     }
 
     public boolean empty()
