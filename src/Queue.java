@@ -40,7 +40,7 @@ public class Queue
      */
     public Object front()
     {
-        return first;
+        return first.getContent();
     }
 
     public boolean empty()

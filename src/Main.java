@@ -14,7 +14,9 @@ public class Main
         queue = new Queue();
 
         queue.enqueue("Hello world!");
+        System.out.println(queue.front());
         queue.enqueue("TEST1");
+        System.out.println(queue.front());
 
         System.out.println(((Node) queue.dequeue()).getContent());
 
