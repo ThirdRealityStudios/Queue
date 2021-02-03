@@ -35,9 +35,12 @@ public class Queue
         return dequeued;
     }
 
+    /**
+     * @return the first object in the Queue
+     */
     public Object front()
     {
-        return null;
+        return first;
     }
 
     public boolean empty()
